@@ -1,0 +1,41 @@
+@import './common/mobile';
+@import '../assets/iconfont/iconfont.css';
+@import './page/one';
+@import './page/my';
+@import '../libs/layer_mobile/need/layer.css';
+@import './common/swiper-3.3.1.min.css';
+@import './page/recommend';
+@import './common/iscroll.css';
+@import './page/detail';
+@import './page/explore';
+
+html,body,#app{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    div{
+        width: 100%;
+       
+    }
+}
+
+.example{
+    animation: goto 0.8s both;
+}
+
+  @keyframes goto{
+    from{transform: translateX(-100%)}
+    to{transform: translateX(0)}
+
+  }
+  
+  .leave{
+    animation: goleve 0.8s both;
+  }
+
+  @keyframes goleve{
+    from{transform: translateX(0)}
+    to{transform: translateX(100%)}
+  }
+
+ 
